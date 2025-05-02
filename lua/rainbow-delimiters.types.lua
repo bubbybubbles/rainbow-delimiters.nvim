@@ -40,6 +40,7 @@
 
 ---@class rainbow_delimiters.config.strategies
 ---@field ['']         (string | rainbow_delimiters.strategy | fun(bufnr: integer): string | rainbow_delimiters.strategy?)?
+---@field arduino (string | rainbow_delimiters.strategy | fun(bufnr: integer): string | rainbow_delimiters.strategy?)?
 ---@field astro        (string | rainbow_delimiters.strategy | fun(bufnr: integer): string | rainbow_delimiters.strategy?)?
 ---@field bash         (string | rainbow_delimiters.strategy | fun(bufnr: integer): string | rainbow_delimiters.strategy?)?
 ---@field c            (string | rainbow_delimiters.strategy | fun(bufnr: integer): string | rainbow_delimiters.strategy?)?
@@ -113,6 +114,7 @@
 
 ---@class rainbow_delimiters.config.queries
 ---@field ['']         (('rainbow-delimiters' | string) | fun(bufnr: integer): ('rainbow-delimiters' | string))?
+---@field arduino (('rainbow-delimiters' | string) | fun(bufnr: integer): ('rainbow-delimiters' | string))?
 ---@field astro        (('rainbow-delimiters' | string) | fun(bufnr: integer): ('rainbow-delimiters' | string))?
 ---@field bash         (('rainbow-delimiters' | string) | fun(bufnr: integer): ('rainbow-delimiters' | string))?
 ---@field c            (('rainbow-delimiters' | string) | fun(bufnr: integer): ('rainbow-delimiters' | string))?
@@ -186,6 +188,7 @@
 
 ---@class rainbow_delimiters.config.priorities
 ---@field ['']         (integer | fun(bufnr: integer): integer)?
+---@field arduino (integer | fun(bufnr: integer): integer)?
 ---@field astro        (integer | fun(bufnr: integer): integer)?
 ---@field bash         (integer | fun(bufnr: integer): integer)?
 ---@field c            (integer | fun(bufnr: integer): integer)?
@@ -258,6 +261,7 @@
 ---@field [string]     (integer | fun(bufnr: integer): integer)?
 
 ---@alias rainbow_delimiters.language
+---| 'arduino'
 ---| 'astro'
 ---| 'bash'
 ---| 'c'
